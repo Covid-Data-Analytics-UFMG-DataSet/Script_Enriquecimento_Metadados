@@ -43,6 +43,12 @@ A estrutura da árvore
 Uma versao da árvore alimentada com alguns metadados coletados pode ser encontrada no repositório Script_Enriquecimento_Metadados/script_XML_metadados, no 
 arquivo 'metadados.xml'.
 
+# Metodologia
+No arquivo excel de entrada foi anexada uma planilha contendo uma tabela contendo: uma coluna listando os nós (de 1 ao número total de nós) de acordo com
+a ordem dos mesmos na árvore XML, uma coluna com os nomes dos nós e uma coluna contendo uma descrição dos nós (que será informada no campo "name" das tags
+do xml). Essa tabela é acessada primeiro pelo script e utilizada para modelar a árvore para poder então acessar a tabela com os metadados e alimentá-los à 
+árvore. Dessa forma, caso seja necessária uma alteração no modelo de dados, o script já seria capaz de tratá-las sem necessidade de modificações. 
+
 ### Colaboradores
 * Product Owner: Ramon Salinas
 * Scrum Master: Pedro Victor
