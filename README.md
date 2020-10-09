@@ -15,30 +15,10 @@ para facilitar o acesso a esses dados. O módulo xml.etree.ElementTree foi utili
 ### Árvore XML
 A estrutura da árvore
 
-```
-<Arquivos>
-	<ID_Arquivo name="1">
-		<name name="Nome do arquivo"></name>
-		<type name="Tipo de arquivo"></type>
-		<description name="Descricao do arquivo"></description>
-		<keywords name="Palavras-chave"></keywords>
-		<theme name="Tema"></theme>
-		<publisher name="Publisher"></publisher>
-		<creator name="Grupo"></creator>
-		<team name="Subgrupo"></team>
-		<teamMembers name="Pessoas envolvidas no produto"></teamMembers>
-		<issued name="Carimbo de data/hora"></issued>
-		<modified name="Ultima atualizacao do arquivo"></modified>
-		<collectionDate name="Data de coleta"></collectionDate>
-		<startDate name="Data inicial"></startDate>
-		<endDate name="Data final"></endDate>
-		<spatial name="Local"></spatial>
-		<source name="Fonte da Coleta"></source>
-		<language name="Lingua"></language>
-		<url name="Subir Arquivo"></url>
-	</ID_Arquivo>
-</Arquivos>
-```
+![Arvore_2](https://user-images.githubusercontent.com/69644988/95624441-44ebdd80-0a4d-11eb-8f67-44ddff6fd3bc.PNG)
+
+A raíz da árvore foi nomeada como "Arquivos" e os filhos dela serão os arquivos, identificados por uma ID sequencial, cujos filhos são todos os metadados
+coletados sobre aquele arquivo.
 
 Uma versao da árvore alimentada com alguns metadados coletados pode ser encontrada no repositório Script_Enriquecimento_Metadados/script_XML_metadados, no 
 arquivo 'metadados.xml'.
