@@ -14,6 +14,10 @@ def generate_xml(tabela_excel):
         i += 1
         arquivo = xml.SubElement(root, "ID_Arquivo", name=str(i))
 
+        row[1].loc['Nome do arquivo'] = str(row[1].loc['Nome do arquivo']).capitalize()
+        if(str(row[1].loc['Nome do arquivo']).find("brasil") != -1):
+            row[1].loc['Nome do arquivo'] = str(row[1].loc['Nome do arquivo']).replace("brasil", "Brasil")
+
         for col in header.iterrows():
             nome_XML = col[1].loc['Nome XML']
             nome_original = str(col[1].loc['Nome original'])
